@@ -11,7 +11,7 @@ class Character {
   private _lifePoints: number;
   private _strength: number;
   private _defense: number;
-  private _dexterity: number;
+  private _dexterity: number;              
   private _energy: Energy;
 
   constructor(name: string) {
