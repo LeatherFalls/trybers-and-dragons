@@ -1,49 +1,9 @@
 # Boas vindas ao repositório do projeto Trybers and Dragons!
 
-Para realizar o projeto, atente-se a cada passo descrito a seguir, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
-# Termos e acordos
-
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta e do Manual da Pessoa Estudante da Trybe.
-
-# Entregáveis
-
-<details>
-  <summary><strong>🤷🏽‍♀️ Como entregar</strong></summary><br />
-
-  Para entregar o seu projeto você deverá criar um *Pull Request* neste repositório.
-
-  Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://app.betrybe.com/course/4d67f5b4-34a6-489f-a205-b6c7dc50fc16/) e nosso [Blog - Git & GitHub](https://blog.betrybe.com/tecnologia/git-e-github/) sempre que precisar!
-</details>
-
 <details>
   <summary><strong>👨‍💻 O que deverá ser desenvolvido</strong></summary><br />
 
   Para este projeto, você deverá aplicar os princípios da arquitetura `SOLID` e os princípios de `POO` em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos `RPG` (_Role Playing Game_).
-
-  ---
-
-  ⚠️ **Dicas Importantes** ⚠️:
-
-  - Durante a execução dos testes, serão criados arquivos `.js` no repositório do projeto:
-
-    - Ao final da execução de cada teste é rodado um script que apaga todos os arquivos `.js` do repositório (com exceção dos que já vão com o projeto);
-
-    - O script utiliza o binário `find` do linux;
-
-    - ~Em ambiente Windows, o `find` utilizado é o que vem na instalação do git (`C:/Program Files/Git/usr/bin/find.exe`).~
-
-</details>
-
-<details>
-  <summary><strong>🗓 Data de Entrega</strong></summary><br />
-  
-  * Este projeto é individual
-  * São `2` dias de projeto
-  * Data para entrega final do projeto: `17/08/2022 14:00`
-
 </details>
 
 # Orientações
@@ -60,205 +20,15 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta 
   > Use o comando `docker exec -it trybers_and_dragons bash`.
   - Ele te dará acesso ao terminal interativo do container criado pelo compose, que está rodando em segundo plano.
 
-  > Instale as dependências [**Caso existam**] com `npm install`
-  
-  ⚠ Atenção ⚠ Caso opte por utilizar o Docker, **TODOS** os comandos disponíveis no `package.json` (npm start, npm test, npm run dev, ...) devem ser executados **DENTRO** do container, ou seja, no terminal que aparece após a execução do comando `docker exec` citado acima. 
-
-  ⚠ Atenção ⚠ O **git** dentro do container não vem configurado com suas credenciais. Ou faça os commits fora do container, ou configure as suas credenciais do git dentro do container.
-
-  ⚠ Atenção ⚠ Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto, e essa atualização gera conflitos com o avaliador.
-
-
-✨ **Dica:** A extensão `Remote - Containers` (que estará na seção de extensões recomendadas do VS Code) é indicada para que você possa desenvolver sua aplicação no container Docker direto no VS Code, como você faz com seus arquivos locais.
+  > Instale as dependências com `npm install`
 
 <img src="images/remote-container.png" width="800px" >  
 
 ---
   
   ## Sem Docker
-  
-  > Instale as dependências [**Caso existam**] com `npm install`
-  
-  ⚠ Atenção ⚠ Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto, e essa atualização gera conflitos com o avaliador.
-
-  ✨ **Dica:** Para rodar o projeto desta forma, obrigatoriamente você deve ter o `node` instalado em seu computador.
-
-  ✨ **Dica:** O avaliador espera que a versão do `node` utilizada seja a 16.
-
+  > Instale as dependências com `npm install`
   <br/>
-</details>
-
-<details>
-  <summary><strong>‼️ Antes de começar a desenvolver</strong></summary><br />
-
-  1. Clone o repositório
-
-  - `git clone https://github.com/tryber/sd-019-a-project-trybers-and-dragons.git`.
-  - Entre na pasta do repositório que você acabou de clonar:
-    - `cd sd-019-a-project-trybers-and-dragons`
-
-  2. Instale as dependências
-
-  - `npm install`
-
-  3. Crie uma branch a partir da branch `main`
-
-  - Verifique se você está na branch `main`
-    - Exemplo: `git branch`
-  - Se não estiver, mude para a branch `main`
-    - Exemplo: `git checkout main`
-  - Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
-    - Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    - Exemplo: `git checkout -b joaozinho-sd-019-a-project-trybers-and-dragons`
-
-  4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-
-  - Verifique que as mudanças ainda não estão no _stage_
-    - Exemplo: `git status` (deve aparecer listada a pasta _joaozinho_ em vermelho)
-  - Adicione o novo arquivo ao _stage_ do Git
-      - Exemplo:
-        - `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-        - `git status` (deve aparecer listado o arquivo _joaozinho/README.md_ em verde)
-  - Faça o `commit` inicial
-      - Exemplo:
-        - `git commit -m 'iniciando o projeto x'` (fazendo o primeiro commit)
-        - `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-  5. Adicione a sua branch com o novo `commit` ao repositório remoto
-
-  - Usando o exemplo anterior: `git push -u origin joaozinho-sd-019-a-project-trybers-and-dragons`
-
-  6. Crie um novo `Pull Request` _(PR)_
-
-  - Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-019-a-project-trybers-and-dragons/pulls);
-  - Clique no botão verde _"New pull request"_;
-  - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**;
-  - Clique no botão verde _"Create pull request"_;
-  - Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_;
-  - **Não se preocupe em preencher mais nada por enquanto!**;
-  - Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-019-a-project-trybers-and-dragons/pulls) e confira que o seu _Pull Request_ está criado.
-
-</details>
-
-<details>
-  <summary><strong>⌨️ Durante o desenvolvimento</strong></summary><br />
-
-  - Faça `commits` das alterações que você fizer no código regularmente
-
-  - Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-  - Os comandos que você utilizará com mais frequência são:
-    1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-    2. `git add` _(para adicionar arquivos ao stage do Git)_
-    3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-    4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-    5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
-</details>
-
-<details>
-  <summary><strong>🤝 Depois de terminar o desenvolvimento (opcional)</strong></summary><br />
-
-  Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
-
-  - Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-    - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-    - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-    - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-019-a`.
-
-  Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
-
-</details>
-
-<details>
-  <summary><strong>🕵🏿 Revisando um pull request</strong></summary><br />
-
-  Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
-
-</details>
-
-<details>
-  <summary><strong>🍀 Dicas da sorte</strong></summary><br />
-
-  **⚠️ Leia as informações abaixo atentamente e siga à risca o que for pedido. ⚠️**
-
-  **👀 Observações importantes:**
-
-  - O projeto deve ser desenvolvido na ordem dos requisitos (do 1 ao 13);
-
-  - As importações e exportações dos arquivos devem ser feitas exatamente como estão sendo solicitadas e os nomes dos arquivos/diretórios também devem seguir à risca o que é pedido no `README.md`;
-
-  - Sempre que encontrar o símbolo ⚠️ pare e leia com muita atenção o que é pedido;
-
-  - Atente ao vocabulário usado no projeto, ele é super importante para te ajudar na hora de suas pesquisas. Qualquer dúvida procure a pessoa instrutora de sua turma no `Slack` ou nas `mentorias`;
-
-  - Preste atenção às convenções, isso tem ligação direta com as boas práticas de código e de comunicação entre equipes;
-
-  - Ao longo do projeto algumas refatorações serão necessárias para que ele funcione como é esperado;
-
-  - Dentro do diretório `src/Battle` existe um arquivo `Battle.ts` com uma classe abstrata de batalha criada. Os arquivos deste diretório estão comentados e podem ser usados de exemplo para a construção do projeto. Durante a execução do projeto, no **requisito 6 - Crie a interface `Fighter`**, será pedido para você descomentar os arquivos. Só descomente quando chegar lá, senão haverá erro de lint;
-
-  - Preste atenção ao padrão do projeto, onde cada diretório possui um arquivo `index.ts` exportando as informações necessárias, tomando cuidado para não ter problemas na execução dos testes.
-
-</details>
-
-<details>
-  <summary><strong>🎛 Linter</strong></summary><br />
-
-  Usaremos o [ESLint](https://eslint.org/) para fazer a análise estática do seu código.
-
-  Este projeto já vem com as dependências relacionadas ao _linter_ configuradas no arquivos `package.json`.
-
-  Para poder rodar os `ESLint` em um projeto, basta executar o comando `npm install` dentro do projeto e depois `npm run lint`. Se a análise do `ESLint` encontrar problemas no seu código, tais problemas serão mostrados no seu terminal. Se não houver problema no seu código, nada será impresso no seu terminal.
-
-  ⚠ PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS. ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO! ⚠
-
-  Você também pode instalar o plugin do `ESLint` no `VSCode`: bastar ir em _extensions_ e baixar o [plugin `ESLint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
-</details>
-
-
-<details>
-  <summary><strong>🛠 Testes</strong></summary><br />
-
-  Para executar os testes localmente, digite no terminal o comando `npm test`.
-
-  ### Dica: desativando testes
-
-  Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `describe`. Como o nome indica, esta função "pula" um teste:
-
-  ```typescript
-  describe.skip('...', () => {})
-  ```
-
-  Uma estratégia é pular todos os testes no início e ir implementando um teste de cada vez, removendo dele a função `skip`.
-
-  ⚠️ Lembre-se de não entregar o projeto com nenhum teste ignorado. **Testes ignorados serão tratados como testes falhando**. ⚠️
-
-  ⚠️ **Não apague, em hipótese alguma, qualquer teste ou arquivo deste repositório**. ⚠️
-
-</details>
-
-<details>
-  <summary><strong>🗣 Nos dê feedbacks sobre o projeto!</strong></summary><br />
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. 
-**Leva menos de 3 minutos!**
-
-[FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
-
-⚠️ **O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?**
-
-</details>
-
-<details>
-  <summary><strong>🗂 Compartilhe seu portfólio!</strong></summary><br />
-
-  Você sabia que o LinkedIn é a principal rede social profissional e compartilhar o seu aprendizado lá é muito importante para quem deseja construir uma carreira de sucesso? Compartilhe esse projeto no seu LinkedIn, marque o perfil da Trybe (@trybe) e mostre para a sua rede toda a sua evolução.
-
-</details>
 
 # Requisitos
 
@@ -312,11 +82,6 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
 > Dica: use a convenção de atributos privados para criar os atributos **com** `_` e os getters para expor os atributos **sem** o `_`.
 <br>
 
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `Race` deve ser exportada de forma padrão (com `export default`);
-> - Deve ser criado o arquivo chamado `index.ts` dentro do diretório `src/Races/`;
-> - A classe `Race` deve ser importada dentro deste arquivo e exportada também de forma padrão, da mesma forma que no diretório `src/Battle/`.
-
 <br>
 </details>
 
@@ -360,11 +125,6 @@ Antes de prosseguir com a missão, é muito importante saber que:
 - Não se esqueça de fazer a sobrescrita (`override`) do(s) método(s) necessário(s).
 
 <br>
-
-> ⚠️ **Atenção**:
-> - Assim como no requisito anterior, cada uma das classes criadas (`Dwarf`, `Elf`, `Halfling` e `Orc`) para este requisito deve ser exportada de forma padrão (com `export default`).
-> - As classes (`Dwarf`, `Elf`, `Halfling` e `Orc`) devem ser importadas dentro de `src/Races/index.ts` e exportadas de forma explícita (`export { class1, class2, classN }`).
-> - Não se esqueça de implementar o método `createdRacesInstances` nas classes herdeiras;
 
 <br>
 </details>
@@ -425,10 +185,6 @@ Sua próxima missão é tornar possível o uso destes dois tipos de energia:  *"
 
 <br>
 
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a interface `Energy` deve ser exportada de forma padrão ( com `export default`).
-> - `EnergyType` também deve ser exportado, mas este de forma explícita (`export`).
-
 <br>
 </details>
 
@@ -479,11 +235,6 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
 
 <br>
 
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `Archetype` deve ser exportada de forma padrão ( com `export default`);
-> - Um arquivo `index.ts` deve ser criado dentro do diretório `src/Archetypes/`;
-> - A classe `Archetype` deve ser importada dentro deste arquivo e exportada também de forma padrão, como feito com `Race`.
-
 <br>
 </details>
 
@@ -526,11 +277,6 @@ Para isto, atenção às instruções a seguir:
 - Não se esqueça de fazer a sobrescrita (`override`) do(s) método(s) necessário(s);
 
 <br>
-
-> ⚠️ **Atenção**:
-> - Assim como no requisito anterior, cada uma das classes criadas (`Mage`, `Necromancer`, `Warrior` e `Ranger`) para este requisito deve ser exportada de forma padrão ( com `export default`);
-> - Novamente, as classes (`Mage`, `Necromancer`, `Warrior` e `Ranger`) devem ser importadas dentro de `src/Archetypes/index.ts` e exportadas de forma explícita (`export { class1, class2, classN }`).
-> - Não se esqueça de implementar o método `createdArchetypeInstances` nas classes herdeiras;
 
 <br>
 </details>
@@ -591,11 +337,6 @@ Para fixar bem esse conceito, preparamos para você a missão especial de criar 
 - Agora você pode descomentar os trechos de código dos arquivos do diretório `Battle`; (`Battle.ts` e `index.ts`).
 
 <br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a interface `Fighter` deve ser exportada de forma padrão (com `export default`);
-> - Um arquivo chamado `index.ts` deve ser criado dentro do diretório `src/Fighter/`;
-> - A interface `Fighter` deve ser importada dentro deste arquivo e exportada também de forma padrão, como feito em requisitos anteriores.
 
 <br>
 </details>
@@ -683,9 +424,6 @@ As dicas para completar essa *quest* são:
 
 <br>
 
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `Character` deve ser exportada de forma padrão ( com `export default`).
-
 <br>
 </details>
 
@@ -729,10 +467,6 @@ As dicas para completar essa *quest* são:
 - Aqui é um bom momento para treinarmos algumas skills deste bloco e aplicar uma refatoração, além disso você acaba adiantando uma parte do próximo requisito ✨. Utilize a segregação de interfaces, volte e observe nossa `interface Fighter`.
 
 <br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a interface `SimpleFighter` deve ser exportada de forma padrão (com `export default`);
-> - A interface `SimpleFighter` deve ser importada dentro de `src/Fighter/index.ts` e deve ser exportada de forma explícita (`export { SimpleFighter }`), como feito em requisitos anteriores.
 
 <br>
 </details>
@@ -783,9 +517,6 @@ O que você deve saber para seguir em frente:
 ✨ Dica de mestre: ✨
 - Aqui vamos precisar que os métodos de `Fighter` que recebiam um inimigo do tipo `Fighter` agora possam receber um `SimpleFighter`. Assim um `Fighter` pode atacar um `Monster` 😄.
 
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `Monster` deve ser exportada de forma padrão ( com `export default`).
-
 <br>
 </details>
 
@@ -832,10 +563,6 @@ Brincadeira! Estamos aqui para te ajudar e por isso trazemos abaixo algumas dica
 
 <br>
 
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `PVP` deve ser exportada de forma padrão (com `export default`);
-> - Novamente, dentro de `src/Battle/index.ts`, a classe (`PVP`) deve ser importada, porém esta deve ser exportada de forma normal (`export { PVP }`), como feito em requisitos anteriores.
-
 <br>
 </details>
 
@@ -873,10 +600,6 @@ Antes de prosseguir para essa nova batalha, leia atentamente as dicas abaixo !!!
 
 <br>
 
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `PVE` deve ser exportada de forma padrão (com `export default`);
-> - Novamente dentro de `src/Battle/index.ts` a classe (`PVE`) deve ser importada, porém desta vez de forma normal (`export { PVP }`), como feito em requisitos anteriores.
-
 <br>
 </details>
 
@@ -910,9 +633,6 @@ Nesta *quest*, você deve **criar a classe `Dragon`**, cuidando para garantir qu
 
 <br>
 
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `Dragon` deve ser exportada de forma padrão ( com `export default`).
-
 <br>
 </details>
 
@@ -939,7 +659,7 @@ Agora repare que, por mais que a gente saiba o que são `Monster`, `Character`, 
 Algumas dicas se fazem necessárias para completar sua última missão no mundo de T&D. Elas são:
 
 - O arquivo deve ser criado na raiz de `src/` e se chamar `index.ts`;
-- ⚠️ Preste bastante atenção nos nomes das variáveis/métodos e nas exportações pedidas deste último requisito; :wink:.
+
 - Crie `3` objetos do tipo `Character`:
   - As variáveis devem-se chamar `player1`, `player2` e `player3`;
   - Execute algumas vezes o método `levelUp` do `player1`;
@@ -967,9 +687,6 @@ Algumas dicas se fazem necessárias para completar sua última missão no mundo 
 - Lembre-se `Battle` não pode ser instanciada, pois é uma classe abstrata;
 
 <br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, os objetos/métodos criados em `src/index.ts` devem ser exportados como explicado no requisito;
 
 <br>
 </details>
